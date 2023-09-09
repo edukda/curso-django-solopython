@@ -6,5 +6,5 @@ from .views import PrimaryView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', PrimaryView.as_view(), name="primary"),
-    path('blog/', include('blog.urls'))
+    path('blog/', include('blog.urls')),
 ]
